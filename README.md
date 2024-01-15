@@ -11,11 +11,13 @@ npm install react-native-image-dominant-color
 ## Usage
 
 ```js
-import { multiply } from 'react-native-image-dominant-color';
+import { getColor } from 'react-native-image-dominant-color';
 
 // ...
 
-const result = await multiply(3, 7);
+const result = await getColor('https://all-image.com/1.jpg'); // your image url
+
+console.log(result.dominantColor); // format by rgba
 ```
 
 ## Contributing
