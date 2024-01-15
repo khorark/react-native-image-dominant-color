@@ -6,6 +6,10 @@ Get dominant color from image url
 
 ```sh
 npm install react-native-image-dominant-color --save
+or
+yarn add react-native-image-colors
+
+cd ios && pod install
 ```
 
 ## Usage
