@@ -17,6 +17,10 @@ const ImageDominantColor = NativeModules.ImageDominantColor
       }
     );
 
-export function multiply(a: number, b: number): Promise<number> {
-  return ImageDominantColor.multiply(a, b);
+interface Result {
+  dominantColor: string;
+}
+
+export async function getColor(imageUrl: string): Promise<Result> {
+  return ImageDominantColor.getColor(imageUrl);
 }
