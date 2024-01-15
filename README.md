@@ -5,7 +5,7 @@ Get dominant color from image url
 ## Installation
 
 ```sh
-npm install react-native-image-dominant-color
+npm install react-native-image-dominant-color --save
 ```
 
 ## Usage
@@ -15,9 +15,10 @@ import { getColor } from 'react-native-image-dominant-color';
 
 // ...
 
-const result = await getColor('https://all-image.com/1.jpg'); // your image url
-
-console.log(result.dominantColor); // format by rgba
+async function getDominantColor(imageUrl: string): Promise<void> {
+  const result = await getColor('https://all-image.com/1.jpg'); // your image url
+  console.log(result.dominantColor); //Ex rgba(64.0, 72.0, 240.0, 1.0)
+}
 ```
 
 ## Contributing
