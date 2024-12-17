@@ -1,6 +1,6 @@
 {
   "name": "react-native-image-dominant-color",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Get dominant color from image url",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
